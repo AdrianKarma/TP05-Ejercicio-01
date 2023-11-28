@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Juego de adivinar el número</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Ejercicios, javascript, practico, RollingCode "
+    />
+    <meta name="author" content="Adrian Chanampa" />
+    <meta
+      name="description"
+      content="Quinto Trabajo Practico JS para RollingCode"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Juego de adivinar el número</h1>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <p class="card-text">
+                Piensa en un número entre 1 y 100 y trata de adivinar el número
+                mágico que he generado.
+              </p>
+              <button id="start" class="btn btn-primary">
+                Comenzar el juego
+              </button>
+              <div id="game" class="d-none">
+                <div class="form-group">
+                  <label for="number">Ingresa un número</label>
+                  <input
+                    type="number"
+                    id="number"
+                    class="form-control"
+                    min="1"
+                    max="100"
+                  />
+                </div>
+                <button id="send" class="btn btn-success">Enviar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./js/magic.js"></script>
+  </body>
+</html>
